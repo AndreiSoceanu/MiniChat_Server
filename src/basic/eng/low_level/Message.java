@@ -1,6 +1,6 @@
 package basic.eng.low_level;
 
-public final class Message {
+public class Message {
     private String mSender;
     private String mContent;
 
