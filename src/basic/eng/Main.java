@@ -2,6 +2,7 @@ package basic.eng;
 
 import basic.eng.low_level.Message;
 import basic.eng.low_level.PrivateMessage;
+import basic.eng.server.ServerConfig;
 
 public class Main {
 
@@ -19,5 +20,7 @@ public class Main {
 
 		System.out.println(pm1.toString());
 		System.out.println(pm2.toString());
+		ServerConfig sc = new ServerConfig();
+		System.out.println(sc.toString());
     }
 }
