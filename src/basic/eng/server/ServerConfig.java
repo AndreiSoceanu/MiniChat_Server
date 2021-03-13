@@ -47,14 +47,12 @@ public final class ServerConfig {
                  * for invalid format
                  */
 
-                if (!line.startsWith("#") && !line.contains("="))
-                    unknownFormatLine += 1;
                 if (!line.contains("#") && !line.contains("="))
                     unknownFormatLine += 1;
 
-                if (line.startsWith("#")) {
+                if (line.startsWith("#"))
                     continue;
-                }
+              
                 if (line.startsWith("TCP")) {
                     TCP_PORT = Integer.parseInt(line.split("=")[1]);
                     haveTCP = true;

@@ -11,7 +11,6 @@ public class ServerPeer {
 
     public ServerPeer(Socket socket) {
         this.socket = socket;
-
     }
 
     public void run() {

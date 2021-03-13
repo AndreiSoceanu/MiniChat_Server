@@ -17,7 +17,7 @@ public class ClientPeer {
     }
 
     public void sendMessage(String message) throws IOException {
-        outputStream.writeObject(new Message(sender, message));
+    outputStream.writeObject(new Message(sender,message));
     }
 
     public void sendMessage(String message, String recipient) throws IOException {
