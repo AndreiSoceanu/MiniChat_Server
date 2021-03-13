@@ -1,6 +1,6 @@
 package basic.eng.server;
 
-public class MissingKeyException extends Exception{
+public class MissingKeyException extends Exception {
     public MissingKeyException(String message) {
         super(message);
     }
