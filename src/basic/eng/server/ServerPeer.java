@@ -8,10 +8,11 @@ import java.net.Socket;
 
 public class ServerPeer {
     private final Socket socket;
+
     public ServerPeer(Socket socket) {
         this.socket = socket;
-
     }
+
     public void run() {
         try {
             ObjectInputStream inputStream =
