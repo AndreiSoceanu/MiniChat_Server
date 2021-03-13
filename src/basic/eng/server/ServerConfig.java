@@ -48,8 +48,9 @@ public final class ServerConfig {
                  */
 
                 if (!line.startsWith("#") && !line.contains("="))
-                    unknownFormatLine += 1
-                if(!line.contains("#") && !line.contains("=")) unknownFormatLine += 1;
+                    unknownFormatLine += 1;
+                if (!line.contains("#") && !line.contains("="))
+                    unknownFormatLine += 1;
 
                 if (line.startsWith("#")) {
                     continue;

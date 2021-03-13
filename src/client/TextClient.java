@@ -22,14 +22,14 @@ public class TextClient {
                 BufferedReader in =
                         new BufferedReader(new InputStreamReader(System.in));
                 String input = in.readLine();
-                if(input.startsWith("/w")) {
+                if (input.startsWith("/w")) {
                     /**
                      * for private message -> /w recipientName Message
                      */
                     String tokens[] = input.split(" ", 3);
                     clientPeer.sendMessage(tokens[1], tokens[2]);
                 }
-                if(input.startsWith("/q")) {
+                if (input.startsWith("/q")) {
                     socket.close();
                     break;
                 }
