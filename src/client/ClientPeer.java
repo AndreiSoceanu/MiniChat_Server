@@ -22,6 +22,7 @@ public class ClientPeer {
 
     public void sendMessage(String message, String recipient) throws IOException {
         outputStream.writeObject(new PrivateMessage(recipient, sender, message));
+
     }
 
 }
